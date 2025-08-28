@@ -1,0 +1,30 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Cake = icon.NewIcon(CakeComponent)
+
+templ CakeComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"></path>
+		<path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"></path>
+		<path d="M2 21h20"></path>
+		<path d="M7 8v3"></path>
+		<path d="M12 8v3"></path>
+		<path d="M17 8v3"></path>
+		<path d="M7 4h.01"></path>
+		<path d="M12 4h.01"></path>
+		<path d="M17 4h.01"></path>
+	</svg>
+}

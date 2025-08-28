@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var SquareSquare = icon.NewIcon(SquareSquareComponent)
+
+templ SquareSquareComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect x="3" y="3" width="18" height="18" rx="2"></rect>
+		<rect x="8" y="8" width="8" height="8" rx="1"></rect>
+	</svg>
+}

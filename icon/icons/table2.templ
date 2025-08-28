@@ -1,0 +1,22 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Table2 = icon.NewIcon(Table2Component)
+
+templ Table2Component(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"></path>
+	</svg>
+}

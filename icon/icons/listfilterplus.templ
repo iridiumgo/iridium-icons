@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ListFilterPlus = icon.NewIcon(ListFilterPlusComponent)
+
+templ ListFilterPlusComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 18h4"></path>
+		<path d="M11 6H3"></path>
+		<path d="M15 6h6"></path>
+		<path d="M18 9V3"></path>
+		<path d="M7 12h8"></path>
+	</svg>
+}

@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Highlighter = icon.NewIcon(HighlighterComponent)
+
+templ HighlighterComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m9 11-6 6v3h9l3-3"></path>
+		<path d="m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4"></path>
+	</svg>
+}

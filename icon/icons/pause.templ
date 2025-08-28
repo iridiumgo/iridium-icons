@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Pause = icon.NewIcon(PauseComponent)
+
+templ PauseComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect x="14" y="3" width="5" height="18" rx="1"></rect>
+		<rect x="5" y="3" width="5" height="18" rx="1"></rect>
+	</svg>
+}

@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ClipboardCheck = icon.NewIcon(ClipboardCheckComponent)
+
+templ ClipboardCheckComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+		<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+		<path d="m9 14 2 2 4-4"></path>
+	</svg>
+}

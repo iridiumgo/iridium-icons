@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Eclipse = icon.NewIcon(EclipseComponent)
+
+templ EclipseComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="M12 2a7 7 0 1 0 10 10"></path>
+	</svg>
+}

@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var TrendingUpDown = icon.NewIcon(TrendingUpDownComponent)
+
+templ TrendingUpDownComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M14.828 14.828 21 21"></path>
+		<path d="M21 16v5h-5"></path>
+		<path d="m21 3-9 9-4-4-6 6"></path>
+		<path d="M21 8V3h-5"></path>
+	</svg>
+}

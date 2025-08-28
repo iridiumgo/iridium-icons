@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var UndoDot = icon.NewIcon(UndoDotComponent)
+
+templ UndoDotComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M21 17a9 9 0 0 0-15-6.7L3 13"></path>
+		<path d="M3 7v6h6"></path>
+		<circle cx="12" cy="17" r="1"></circle>
+	</svg>
+}

@@ -1,0 +1,22 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var FishSymbol = icon.NewIcon(FishSymbolComponent)
+
+templ FishSymbolComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M2 16s9-15 20-4C11 23 2 8 2 8"></path>
+	</svg>
+}

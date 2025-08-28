@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ScanSearch = icon.NewIcon(ScanSearchComponent)
+
+templ ScanSearchComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+		<path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+		<path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+		<path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+		<circle cx="12" cy="12" r="3"></circle>
+		<path d="m16 16-1.9-1.9"></path>
+	</svg>
+}

@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Strikethrough = icon.NewIcon(StrikethroughComponent)
+
+templ StrikethroughComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M16 4H9a3 3 0 0 0-2.83 4"></path>
+		<path d="M14 12a4 4 0 0 1 0 8H6"></path>
+		<line x1="4" x2="20" y1="12" y2="12"></line>
+	</svg>
+}

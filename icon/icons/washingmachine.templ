@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var WashingMachine = icon.NewIcon(WashingMachineComponent)
+
+templ WashingMachineComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M3 6h3"></path>
+		<path d="M17 6h.01"></path>
+		<rect width="18" height="20" x="3" y="2" rx="2"></rect>
+		<circle cx="12" cy="13" r="5"></circle>
+		<path d="M12 18a2.5 2.5 0 0 0 0-5 2.5 2.5 0 0 1 0-5"></path>
+	</svg>
+}

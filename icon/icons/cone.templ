@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Cone = icon.NewIcon(ConeComponent)
+
+templ ConeComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m20.9 18.55-8-15.98a1 1 0 0 0-1.8 0l-8 15.98"></path>
+		<ellipse cx="12" cy="19" rx="9" ry="3"></ellipse>
+	</svg>
+}

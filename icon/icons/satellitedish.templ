@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var SatelliteDish = icon.NewIcon(SatelliteDishComponent)
+
+templ SatelliteDishComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M4 10a7.31 7.31 0 0 0 10 10Z"></path>
+		<path d="m9 15 3-3"></path>
+		<path d="M17 13a6 6 0 0 0-6-6"></path>
+		<path d="M21 13A10 10 0 0 0 11 3"></path>
+	</svg>
+}

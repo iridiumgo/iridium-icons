@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ReceiptText = icon.NewIcon(ReceiptTextComponent)
+
+templ ReceiptTextComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+		<path d="M14 8H8"></path>
+		<path d="M16 12H8"></path>
+		<path d="M13 16H8"></path>
+	</svg>
+}

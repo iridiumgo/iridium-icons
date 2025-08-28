@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Import = icon.NewIcon(ImportComponent)
+
+templ ImportComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M12 3v12"></path>
+		<path d="m8 11 4 4 4-4"></path>
+		<path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"></path>
+	</svg>
+}

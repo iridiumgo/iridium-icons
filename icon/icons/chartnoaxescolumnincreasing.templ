@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ChartNoAxesColumnIncreasing = icon.NewIcon(ChartNoAxesColumnIncreasingComponent)
+
+templ ChartNoAxesColumnIncreasingComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<line x1="12" x2="12" y1="20" y2="10"></line>
+		<line x1="18" x2="18" y1="20" y2="4"></line>
+		<line x1="6" x2="6" y1="20" y2="16"></line>
+	</svg>
+}

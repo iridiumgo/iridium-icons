@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var BetweenHorizontalStart = icon.NewIcon(BetweenHorizontalStartComponent)
+
+templ BetweenHorizontalStartComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="13" height="7" x="8" y="3" rx="1"></rect>
+		<path d="m2 9 3 3-3 3"></path>
+		<rect width="13" height="7" x="8" y="14" rx="1"></rect>
+	</svg>
+}

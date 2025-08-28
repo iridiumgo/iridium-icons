@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Bubbles = icon.NewIcon(BubblesComponent)
+
+templ BubblesComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M7.2 14.8a2 2 0 0 1 2 2"></path>
+		<circle cx="18.5" cy="8.5" r="3.5"></circle>
+		<circle cx="7.5" cy="16.5" r="5.5"></circle>
+		<circle cx="7.5" cy="4.5" r="2.5"></circle>
+	</svg>
+}

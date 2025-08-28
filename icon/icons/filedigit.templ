@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var FileDigit = icon.NewIcon(FileDigitComponent)
+
+templ FileDigitComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4"></path>
+		<path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+		<rect width="4" height="6" x="2" y="12" rx="2"></rect>
+		<path d="M10 12h2v6"></path>
+		<path d="M10 18h4"></path>
+	</svg>
+}

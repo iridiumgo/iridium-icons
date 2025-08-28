@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Angry = icon.NewIcon(AngryComponent)
+
+templ AngryComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>
+		<path d="M7.5 8 10 9"></path>
+		<path d="m14 9 2.5-1"></path>
+		<path d="M9 10h.01"></path>
+		<path d="M15 10h.01"></path>
+	</svg>
+}

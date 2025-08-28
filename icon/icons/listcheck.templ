@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ListCheck = icon.NewIcon(ListCheckComponent)
+
+templ ListCheckComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M11 18H3"></path>
+		<path d="m15 18 2 2 4-4"></path>
+		<path d="M16 12H3"></path>
+		<path d="M16 6H3"></path>
+	</svg>
+}

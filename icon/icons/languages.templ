@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Languages = icon.NewIcon(LanguagesComponent)
+
+templ LanguagesComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m5 8 6 6"></path>
+		<path d="m4 14 6-6 2-3"></path>
+		<path d="M2 5h12"></path>
+		<path d="M7 2h1"></path>
+		<path d="m22 22-5-10-5 10"></path>
+		<path d="M14 18h6"></path>
+	</svg>
+}

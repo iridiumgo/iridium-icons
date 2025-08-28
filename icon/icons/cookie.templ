@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Cookie = icon.NewIcon(CookieComponent)
+
+templ CookieComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"></path>
+		<path d="M8.5 8.5v.01"></path>
+		<path d="M16 15.5v.01"></path>
+		<path d="M12 12v.01"></path>
+		<path d="M11 17v.01"></path>
+		<path d="M7 14v.01"></path>
+	</svg>
+}

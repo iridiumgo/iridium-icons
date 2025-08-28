@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ListOrdered = icon.NewIcon(ListOrderedComponent)
+
+templ ListOrderedComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 12h11"></path>
+		<path d="M10 18h11"></path>
+		<path d="M10 6h11"></path>
+		<path d="M4 10h2"></path>
+		<path d="M4 6h1v4"></path>
+		<path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"></path>
+	</svg>
+}

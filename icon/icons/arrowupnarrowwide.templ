@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ArrowUpNarrowWide = icon.NewIcon(ArrowUpNarrowWideComponent)
+
+templ ArrowUpNarrowWideComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m3 8 4-4 4 4"></path>
+		<path d="M7 4v16"></path>
+		<path d="M11 12h4"></path>
+		<path d="M11 16h7"></path>
+		<path d="M11 20h10"></path>
+	</svg>
+}

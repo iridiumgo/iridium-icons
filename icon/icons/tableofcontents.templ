@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var TableOfContents = icon.NewIcon(TableOfContentsComponent)
+
+templ TableOfContentsComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M16 12H3"></path>
+		<path d="M16 18H3"></path>
+		<path d="M16 6H3"></path>
+		<path d="M21 12h.01"></path>
+		<path d="M21 18h.01"></path>
+		<path d="M21 6h.01"></path>
+	</svg>
+}

@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Cigarette = icon.NewIcon(CigaretteComponent)
+
+templ CigaretteComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M17 12H3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14"></path>
+		<path d="M18 8c0-2.5-2-2.5-2-5"></path>
+		<path d="M21 16a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
+		<path d="M22 8c0-2.5-2-2.5-2-5"></path>
+		<path d="M7 12v4"></path>
+	</svg>
+}

@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var DraftingCompass = icon.NewIcon(DraftingCompassComponent)
+
+templ DraftingCompassComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m12.99 6.74 1.93 3.44"></path>
+		<path d="M19.136 12a10 10 0 0 1-14.271 0"></path>
+		<path d="m21 21-2.16-3.84"></path>
+		<path d="m3 21 8.02-14.26"></path>
+		<circle cx="12" cy="5" r="2"></circle>
+	</svg>
+}

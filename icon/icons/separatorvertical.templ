@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var SeparatorVertical = icon.NewIcon(SeparatorVerticalComponent)
+
+templ SeparatorVerticalComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M12 3v18"></path>
+		<path d="m16 16 4-4-4-4"></path>
+		<path d="m8 8-4 4 4 4"></path>
+	</svg>
+}

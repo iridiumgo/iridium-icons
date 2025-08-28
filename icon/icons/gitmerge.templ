@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var GitMerge = icon.NewIcon(GitMergeComponent)
+
+templ GitMergeComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="18" cy="18" r="3"></circle>
+		<circle cx="6" cy="6" r="3"></circle>
+		<path d="M6 21V9a9 9 0 0 0 9 9"></path>
+	</svg>
+}

@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ReplyAll = icon.NewIcon(ReplyAllComponent)
+
+templ ReplyAllComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m12 17-5-5 5-5"></path>
+		<path d="M22 18v-2a4 4 0 0 0-4-4H7"></path>
+		<path d="m7 17-5-5 5-5"></path>
+	</svg>
+}

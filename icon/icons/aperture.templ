@@ -1,0 +1,28 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Aperture = icon.NewIcon(ApertureComponent)
+
+templ ApertureComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="m14.31 8 5.74 9.94"></path>
+		<path d="M9.69 8h11.48"></path>
+		<path d="m7.38 12 5.74-9.94"></path>
+		<path d="M9.69 16 3.95 6.06"></path>
+		<path d="M14.31 16H2.83"></path>
+		<path d="m16.62 12-5.74 9.94"></path>
+	</svg>
+}

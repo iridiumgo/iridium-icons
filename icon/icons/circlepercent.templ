@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var CirclePercent = icon.NewIcon(CirclePercentComponent)
+
+templ CirclePercentComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="m15 9-6 6"></path>
+		<path d="M9 9h.01"></path>
+		<path d="M15 15h.01"></path>
+	</svg>
+}

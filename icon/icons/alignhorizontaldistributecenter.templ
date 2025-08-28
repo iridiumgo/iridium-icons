@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var AlignHorizontalDistributeCenter = icon.NewIcon(AlignHorizontalDistributeCenterComponent)
+
+templ AlignHorizontalDistributeCenterComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="6" height="14" x="4" y="5" rx="2"></rect>
+		<rect width="6" height="10" x="14" y="7" rx="2"></rect>
+		<path d="M17 22v-5"></path>
+		<path d="M17 7V2"></path>
+		<path d="M7 22v-3"></path>
+		<path d="M7 5V2"></path>
+	</svg>
+}

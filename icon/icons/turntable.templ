@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Turntable = icon.NewIcon(TurntableComponent)
+
+templ TurntableComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 12.01h.01"></path>
+		<path d="M18 8v4a8 8 0 0 1-1.07 4"></path>
+		<circle cx="10" cy="12" r="4"></circle>
+		<rect x="2" y="4" width="20" height="16" rx="2"></rect>
+	</svg>
+}

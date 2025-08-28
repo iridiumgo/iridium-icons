@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Axis3d = icon.NewIcon(Axis3dComponent)
+
+templ Axis3dComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M13.5 10.5 15 9"></path>
+		<path d="M4 4v15a1 1 0 0 0 1 1h15"></path>
+		<path d="M4.293 19.707 6 18"></path>
+		<path d="m9 15 1.5-1.5"></path>
+	</svg>
+}

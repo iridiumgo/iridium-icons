@@ -1,0 +1,28 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var UtilityPole = icon.NewIcon(UtilityPoleComponent)
+
+templ UtilityPoleComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M12 2v20"></path>
+		<path d="M2 5h20"></path>
+		<path d="M3 3v2"></path>
+		<path d="M7 3v2"></path>
+		<path d="M17 3v2"></path>
+		<path d="M21 3v2"></path>
+		<path d="m19 5-7 7-7-7"></path>
+	</svg>
+}

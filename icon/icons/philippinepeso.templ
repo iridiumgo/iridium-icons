@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var PhilippinePeso = icon.NewIcon(PhilippinePesoComponent)
+
+templ PhilippinePesoComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M20 11H4"></path>
+		<path d="M20 7H4"></path>
+		<path d="M7 21V4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 12H7"></path>
+	</svg>
+}

@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var GalleryHorizontalEnd = icon.NewIcon(GalleryHorizontalEndComponent)
+
+templ GalleryHorizontalEndComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M2 7v10"></path>
+		<path d="M6 5v14"></path>
+		<rect width="12" height="18" x="10" y="3" rx="2"></rect>
+	</svg>
+}

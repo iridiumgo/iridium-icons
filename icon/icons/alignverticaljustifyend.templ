@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var AlignVerticalJustifyEnd = icon.NewIcon(AlignVerticalJustifyEndComponent)
+
+templ AlignVerticalJustifyEndComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="14" height="6" x="5" y="12" rx="2"></rect>
+		<rect width="10" height="6" x="7" y="2" rx="2"></rect>
+		<path d="M2 22h20"></path>
+	</svg>
+}

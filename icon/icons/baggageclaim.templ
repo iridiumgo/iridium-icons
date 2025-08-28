@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var BaggageClaim = icon.NewIcon(BaggageClaimComponent)
+
+templ BaggageClaimComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2"></path>
+		<path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10"></path>
+		<rect width="13" height="8" x="8" y="6" rx="1"></rect>
+		<circle cx="18" cy="20" r="2"></circle>
+		<circle cx="9" cy="20" r="2"></circle>
+	</svg>
+}

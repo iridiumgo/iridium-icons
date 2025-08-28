@@ -1,0 +1,29 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var BrickWall = icon.NewIcon(BrickWallComponent)
+
+templ BrickWallComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="18" height="18" x="3" y="3" rx="2"></rect>
+		<path d="M12 9v6"></path>
+		<path d="M16 15v6"></path>
+		<path d="M16 3v6"></path>
+		<path d="M3 15h18"></path>
+		<path d="M3 9h18"></path>
+		<path d="M8 15v6"></path>
+		<path d="M8 3v6"></path>
+	</svg>
+}

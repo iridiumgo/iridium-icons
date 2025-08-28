@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Timer = icon.NewIcon(TimerComponent)
+
+templ TimerComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<line x1="10" x2="14" y1="2" y2="2"></line>
+		<line x1="12" x2="15" y1="14" y2="11"></line>
+		<circle cx="12" cy="14" r="8"></circle>
+	</svg>
+}

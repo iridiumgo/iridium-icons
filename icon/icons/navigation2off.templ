@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Navigation2Off = icon.NewIcon(Navigation2OffComponent)
+
+templ Navigation2OffComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M9.31 9.31 5 21l7-4 7 4-1.17-3.17"></path>
+		<path d="M14.53 8.88 12 2l-1.17 3.17"></path>
+		<line x1="2" x2="22" y1="2" y2="22"></line>
+	</svg>
+}

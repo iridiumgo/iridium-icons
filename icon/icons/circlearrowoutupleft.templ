@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var CircleArrowOutUpLeft = icon.NewIcon(CircleArrowOutUpLeftComponent)
+
+templ CircleArrowOutUpLeftComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M2 8V2h6"></path>
+		<path d="m2 2 10 10"></path>
+		<path d="M12 2A10 10 0 1 1 2 12"></path>
+	</svg>
+}

@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Ligature = icon.NewIcon(LigatureComponent)
+
+templ LigatureComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M14 12h2v8"></path>
+		<path d="M14 20h4"></path>
+		<path d="M6 12h4"></path>
+		<path d="M6 20h4"></path>
+		<path d="M8 20V8a4 4 0 0 1 7.464-2"></path>
+	</svg>
+}

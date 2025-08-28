@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Chromium = icon.NewIcon(ChromiumComponent)
+
+templ ChromiumComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10.88 21.94 15.46 14"></path>
+		<path d="M21.17 8H12"></path>
+		<path d="M3.95 6.06 8.54 14"></path>
+		<circle cx="12" cy="12" r="10"></circle>
+		<circle cx="12" cy="12" r="4"></circle>
+	</svg>
+}

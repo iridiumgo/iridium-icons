@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var FlaskRound = icon.NewIcon(FlaskRoundComponent)
+
+templ FlaskRoundComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 2v6.292a7 7 0 1 0 4 0V2"></path>
+		<path d="M5 15h14"></path>
+		<path d="M8.5 2h7"></path>
+	</svg>
+}

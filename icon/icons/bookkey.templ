@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var BookKey = icon.NewIcon(BookKeyComponent)
+
+templ BookKeyComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m19 3 1 1"></path>
+		<path d="m20 2-4.5 4.5"></path>
+		<path d="M20 7.898V21a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path>
+		<path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2h7.844"></path>
+		<circle cx="14" cy="8" r="2"></circle>
+	</svg>
+}

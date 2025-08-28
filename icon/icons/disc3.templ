@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Disc3 = icon.NewIcon(Disc3Component)
+
+templ Disc3Component(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="M6 12c0-1.7.7-3.2 1.8-4.2"></path>
+		<circle cx="12" cy="12" r="2"></circle>
+		<path d="M18 12c0 1.7-.7 3.2-1.8 4.2"></path>
+	</svg>
+}

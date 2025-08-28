@@ -1,0 +1,30 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var SquareDashedTopSolid = icon.NewIcon(SquareDashedTopSolidComponent)
+
+templ SquareDashedTopSolidComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M14 21h1"></path>
+		<path d="M21 14v1"></path>
+		<path d="M21 19a2 2 0 0 1-2 2"></path>
+		<path d="M21 9v1"></path>
+		<path d="M3 14v1"></path>
+		<path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"></path>
+		<path d="M3 9v1"></path>
+		<path d="M5 21a2 2 0 0 1-2-2"></path>
+		<path d="M9 21h1"></path>
+	</svg>
+}

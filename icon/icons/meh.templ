@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Meh = icon.NewIcon(MehComponent)
+
+templ MehComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="12" r="10"></circle>
+		<line x1="8" x2="16" y1="15" y2="15"></line>
+		<line x1="9" x2="9.01" y1="9" y2="9"></line>
+		<line x1="15" x2="15.01" y1="9" y2="9"></line>
+	</svg>
+}

@@ -1,0 +1,29 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Haze = icon.NewIcon(HazeComponent)
+
+templ HazeComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m5.2 6.2 1.4 1.4"></path>
+		<path d="M2 13h2"></path>
+		<path d="M20 13h2"></path>
+		<path d="m17.4 7.6 1.4-1.4"></path>
+		<path d="M22 17H2"></path>
+		<path d="M22 21H2"></path>
+		<path d="M16 13a4 4 0 0 0-8 0"></path>
+		<path d="M12 5V2.5"></path>
+	</svg>
+}

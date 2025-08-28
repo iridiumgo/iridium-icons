@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Router = icon.NewIcon(RouterComponent)
+
+templ RouterComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="20" height="8" x="2" y="14" rx="2"></rect>
+		<path d="M6.01 18H6"></path>
+		<path d="M10.01 18H10"></path>
+		<path d="M15 10v4"></path>
+		<path d="M17.84 7.17a4 4 0 0 0-5.66 0"></path>
+		<path d="M20.66 4.34a8 8 0 0 0-11.31 0"></path>
+	</svg>
+}

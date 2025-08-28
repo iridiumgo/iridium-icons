@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Trello = icon.NewIcon(TrelloComponent)
+
+templ TrelloComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+		<rect width="3" height="9" x="7" y="7"></rect>
+		<rect width="3" height="5" x="14" y="7"></rect>
+	</svg>
+}

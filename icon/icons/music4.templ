@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Music4 = icon.NewIcon(Music4Component)
+
+templ Music4Component(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M9 18V5l12-2v13"></path>
+		<path d="m9 9 12-2"></path>
+		<circle cx="6" cy="18" r="3"></circle>
+		<circle cx="18" cy="16" r="3"></circle>
+	</svg>
+}

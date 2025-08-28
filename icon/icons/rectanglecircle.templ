@@ -1,0 +1,23 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var RectangleCircle = icon.NewIcon(RectangleCircleComponent)
+
+templ RectangleCircleComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M14 4v16H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"></path>
+		<circle cx="14" cy="12" r="8"></circle>
+	</svg>
+}

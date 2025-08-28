@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ArrowDown01 = icon.NewIcon(ArrowDown01Component)
+
+templ ArrowDown01Component(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m3 16 4 4 4-4"></path>
+		<path d="M7 20V4"></path>
+		<rect x="15" y="4" width="4" height="6" ry="2"></rect>
+		<path d="M17 20v-6h-2"></path>
+		<path d="M15 20h4"></path>
+	</svg>
+}

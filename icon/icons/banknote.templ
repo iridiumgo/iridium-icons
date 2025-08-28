@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Banknote = icon.NewIcon(BanknoteComponent)
+
+templ BanknoteComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<rect width="20" height="12" x="2" y="6" rx="2"></rect>
+		<circle cx="12" cy="12" r="2"></circle>
+		<path d="M6 12h.01M18 12h.01"></path>
+	</svg>
+}

@@ -1,0 +1,35 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Cpu = icon.NewIcon(CpuComponent)
+
+templ CpuComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M12 20v2"></path>
+		<path d="M12 2v2"></path>
+		<path d="M17 20v2"></path>
+		<path d="M17 2v2"></path>
+		<path d="M2 12h2"></path>
+		<path d="M2 17h2"></path>
+		<path d="M2 7h2"></path>
+		<path d="M20 12h2"></path>
+		<path d="M20 17h2"></path>
+		<path d="M20 7h2"></path>
+		<path d="M7 20v2"></path>
+		<path d="M7 2v2"></path>
+		<rect x="4" y="4" width="16" height="16" rx="2"></rect>
+		<rect x="8" y="8" width="8" height="8" rx="1"></rect>
+	</svg>
+}

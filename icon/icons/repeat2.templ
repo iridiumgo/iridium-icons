@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Repeat2 = icon.NewIcon(Repeat2Component)
+
+templ Repeat2Component(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="m2 9 3-3 3 3"></path>
+		<path d="M13 18H7a2 2 0 0 1-2-2V6"></path>
+		<path d="m22 15-3 3-3-3"></path>
+		<path d="M11 6h6a2 2 0 0 1 2 2v10"></path>
+	</svg>
+}

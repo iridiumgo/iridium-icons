@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Accessibility = icon.NewIcon(AccessibilityComponent)
+
+templ AccessibilityComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="16" cy="4" r="1"></circle>
+		<path d="m18 19 1-7-6 1"></path>
+		<path d="m5 8 3-3 5.5 3-2.36 3.5"></path>
+		<path d="M4.24 14.5a5 5 0 0 0 6.88 6"></path>
+		<path d="M13.76 17.5a5 5 0 0 0-6.88-6"></path>
+	</svg>
+}

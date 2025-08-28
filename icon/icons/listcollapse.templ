@@ -1,0 +1,26 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var ListCollapse = icon.NewIcon(ListCollapseComponent)
+
+templ ListCollapseComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 12h11"></path>
+		<path d="M10 18h11"></path>
+		<path d="M10 6h11"></path>
+		<path d="m3 10 3-3-3-3"></path>
+		<path d="m3 20 3-3-3-3"></path>
+	</svg>
+}

@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var BatteryMedium = icon.NewIcon(BatteryMediumComponent)
+
+templ BatteryMediumComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<path d="M10 14v-4"></path>
+		<path d="M22 14v-4"></path>
+		<path d="M6 14v-4"></path>
+		<rect x="2" y="6" width="16" height="12" rx="2"></rect>
+	</svg>
+}

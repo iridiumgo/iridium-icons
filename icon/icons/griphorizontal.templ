@@ -1,0 +1,27 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var GripHorizontal = icon.NewIcon(GripHorizontalComponent)
+
+templ GripHorizontalComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<circle cx="12" cy="9" r="1"></circle>
+		<circle cx="19" cy="9" r="1"></circle>
+		<circle cx="5" cy="9" r="1"></circle>
+		<circle cx="12" cy="15" r="1"></circle>
+		<circle cx="19" cy="15" r="1"></circle>
+		<circle cx="5" cy="15" r="1"></circle>
+	</svg>
+}

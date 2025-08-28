@@ -1,0 +1,25 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var RockingChair = icon.NewIcon(RockingChairComponent)
+
+templ RockingChairComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<polyline points="3.5 2 6.5 12.5 18 12.5"></polyline>
+		<line x1="9.5" x2="5.5" y1="12.5" y2="20"></line>
+		<line x1="15" x2="18.5" y1="12.5" y2="20"></line>
+		<path d="M2.75 18a13 13 0 0 0 18.5 0"></path>
+	</svg>
+}

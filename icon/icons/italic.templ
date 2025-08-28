@@ -1,0 +1,24 @@
+package icons
+
+import "github.com/asosick/iridium-icons/icon"
+
+var Italic = icon.NewIcon(ItalicComponent)
+
+templ ItalicComponent(i *icon.Icon) {
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={ i.Width }
+		height={ i.Height }
+		viewBox={ i.ViewBox }
+		fill={ i.Fill }
+		stroke={ i.Stroke }
+		stroke-width={ i.StrokeWidth }
+		stroke-linecap={ i.StrokeLineCap }
+		stroke-linejoin={ i.StrokeLineJoin }
+		{ i.Attributes... }
+	>
+		<line x1="19" x2="10" y1="4" y2="4"></line>
+		<line x1="14" x2="5" y1="20" y2="20"></line>
+		<line x1="15" x2="9" y1="4" y2="20"></line>
+	</svg>
+}
