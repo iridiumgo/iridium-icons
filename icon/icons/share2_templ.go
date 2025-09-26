@@ -8,7 +8,7 @@ package icons
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/asosick/iridium-icons/icon"
+import "github.com/iridiumgo/iridium-icons/icon"
 
 var Share2 = icon.NewIcon(Share2Component)
 

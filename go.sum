@@ -1,2 +1,4 @@
 github.com/a-h/templ v0.3.943 h1:o+mT/4yqhZ33F3ootBiHwaY4HM5EVaOJfIshvd5UNTY=
 github.com/a-h/templ v0.3.943/go.mod h1:oCZcnKRf5jjsGpf2yELzQfodLphd2mwecwG4Crk5HBo=
+github.com/iridiumgo/iridium-icons v1.0.1 h1:DjVZT4glTVMcgd0ADG10QPKJTJbywYJCH3g6vh0lYpo=
+github.com/iridiumgo/iridium-icons v1.0.1/go.mod h1:DQ65sa3w/GQ9Bw7hOz76py02xozMKahmLZGyCy/ST6o=

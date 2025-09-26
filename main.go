@@ -164,7 +164,7 @@ func main() {
 			`package icons
 
 import (
-    "github.com/asosick/iridium-icons/icon"
+    "github.com/iridiumgo/iridium-icons/icon"
 )
 
 var %s = icon.NewIcon(%sComponent)
