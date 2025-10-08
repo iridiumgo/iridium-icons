@@ -4,14 +4,16 @@ import (
 	"github.com/a-h/templ"
 )
 
+type Size string
+
 const (
-	SizeXXS = "xxs"
-	SizeXS  = "xs"
-	SizeSM  = "sm"
-	SizeMD  = "md"
-	SizeLG  = "lg"
-	SizeXL  = "xl"
-	SizeXXL = "xxl"
+	SizeXXS Size = "xxs"
+	SizeXS  Size = "xs"
+	SizeSM  Size = "sm"
+	SizeMD  Size = "md"
+	SizeLG  Size = "lg"
+	SizeXL  Size = "xl"
+	SizeXXL Size = "xxl"
 )
 
 type Icon struct {
@@ -52,45 +54,49 @@ func (i *Icon) Copy() *Icon {
 		StrokeWidth:    i.StrokeWidth,
 		StrokeLineCap:  i.StrokeLineCap,
 		StrokeLineJoin: i.StrokeLineJoin,
-		Attributes:     templ.Attributes{},
+		Attributes:     DeepCopyMap(i.Attributes),
 		componentFn:    i.componentFn,
 	}
 }
 
 func (i *Icon) SetAttributes(attributes templ.Attributes) *Icon {
-	i.Attributes = attributes
-	return i
+	cpy := i.Copy()
+	cpy.Attributes = attributes
+	return cpy
 }
 
 func (i *Icon) SetSize(size string) *Icon {
+	cpy := i.Copy()
 	switch size {
 	case "xxs":
-		i.Width, i.Height = "6", "6"
+		cpy.Width, cpy.Height = "6", "6"
 	case "xs":
-		i.Width, i.Height = "12", "12"
+		cpy.Width, cpy.Height = "12", "12"
 	case "sm":
-		i.Width, i.Height = "16", "16"
+		cpy.Width, cpy.Height = "16", "16"
 	case "md":
-		i.Width, i.Height = "20", "20"
+		cpy.Width, cpy.Height = "20", "20"
 	case "lg":
-		i.Width, i.Height = "24", "24"
+		cpy.Width, cpy.Height = "24", "24"
 	case "xl":
-		i.Width, i.Height = "32", "32"
+		cpy.Width, cpy.Height = "32", "32"
 	case "xxl":
-		i.Width, i.Height = "46", "46"
+		cpy.Width, cpy.Height = "46", "46"
 	default:
-		i.Width, i.Height = "24", "24"
+		cpy.Width, cpy.Height = "24", "24"
 	}
-	return i
+	return cpy
 }
 
 func (i *Icon) SetStroke(stroke string) *Icon {
-	i.Stroke = stroke
+	cpy := i.Copy()
+	cpy.Stroke = stroke
 	return i
 }
 
 func (i *Icon) SetStrokeWidth(width string) *Icon {
-	i.StrokeWidth = width
+	cpy := i.Copy()
+	cpy.StrokeWidth = width
 	return i
 }
 
