@@ -8,7 +8,7 @@ package icons
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/iridiumgo/iridium/view/icon"
+import "github.com/iridiumgo/iridium-icons/icon"
 
 var AlignJustify = icon.NewIcon(AlignJustifyComponent)
 

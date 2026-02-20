@@ -3,8 +3,8 @@ package icon_test
 import (
 	"testing"
 
-	"github.com/iridiumgo/iridium/view/icon"
-	"github.com/iridiumgo/iridium/view/icon/icons"
+	"github.com/iridiumgo/iridium-icons/icon"
+	"github.com/iridiumgo/iridium-icons/icon/icons"
 )
 
 func BeforeEach() {
