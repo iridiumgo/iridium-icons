@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var ServerCog = icon.NewIcon(ServerCogComponent)
 
@@ -11,11 +11,11 @@ templ ServerCogComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="m10.852 14.772-.383.923"></path>
 		<path d="M13.148 14.772a3 3 0 1 0-2.296-5.544l-.383-.923"></path>

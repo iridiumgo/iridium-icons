@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var Twitch = icon.NewIcon(TwitchComponent)
 
@@ -11,11 +11,11 @@ templ TwitchComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M21 2H3v16h5v4l4-4h5l4-4V2zm-10 9V7m5 4V7"></path>
 	</svg>

@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var TrendingUpDown = icon.NewIcon(TrendingUpDownComponent)
 
@@ -11,11 +11,11 @@ templ TrendingUpDownComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M14.828 14.828 21 21"></path>
 		<path d="M21 16v5h-5"></path>

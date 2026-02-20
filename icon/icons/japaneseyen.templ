@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var JapaneseYen = icon.NewIcon(JapaneseYenComponent)
 
@@ -11,11 +11,11 @@ templ JapaneseYenComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M12 9.5V21m0-11.5L6 3m6 6.5L18 3"></path>
 		<path d="M6 15h12"></path>

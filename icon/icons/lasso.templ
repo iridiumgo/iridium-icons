@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var Lasso = icon.NewIcon(LassoComponent)
 
@@ -11,11 +11,11 @@ templ LassoComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M3.704 14.467A10 8 0 0 1 2 10a10 8 0 0 1 20 0 10 8 0 0 1-10 8 10 8 0 0 1-5.181-1.158"></path>
 		<path d="M7 22a5 5 0 0 1-2-3.994"></path>

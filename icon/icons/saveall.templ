@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var SaveAll = icon.NewIcon(SaveAllComponent)
 
@@ -11,11 +11,11 @@ templ SaveAllComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M10 2v3a1 1 0 0 0 1 1h5"></path>
 		<path d="M18 18v-6a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6"></path>

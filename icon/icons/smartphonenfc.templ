@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var SmartphoneNfc = icon.NewIcon(SmartphoneNfcComponent)
 
@@ -11,11 +11,11 @@ templ SmartphoneNfcComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<rect width="7" height="12" x="2" y="6" rx="1"></rect>
 		<path d="M13 8.32a7.43 7.43 0 0 1 0 7.36"></path>

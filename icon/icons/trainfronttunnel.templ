@@ -1,6 +1,6 @@
 package icons
 
-import "github.com/iridiumgo/iridium-icons/icon"
+import "github.com/iridiumgo/iridium/view/icon"
 
 var TrainFrontTunnel = icon.NewIcon(TrainFrontTunnelComponent)
 
@@ -11,11 +11,11 @@ templ TrainFrontTunnelComponent(i *icon.Icon) {
 		height={ i.Height }
 		viewBox={ i.ViewBox }
 		fill={ i.Fill }
-		stroke={ i.Stroke }
-		stroke-width={ i.StrokeWidth }
+		stroke={ i.StrokeStr }
+		stroke-width={ i.StrokeWidthStr }
 		stroke-linecap={ i.StrokeLineCap }
 		stroke-linejoin={ i.StrokeLineJoin }
-		{ i.Attributes... }
+		{ i.AttributesMap... }
 	>
 		<path d="M2 22V12a10 10 0 1 1 20 0v10"></path>
 		<path d="M15 6.8v1.4a3 2.8 0 1 1-6 0V6.8"></path>

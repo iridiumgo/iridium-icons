@@ -1,10 +1,10 @@
-package test
+package icon_test
 
 import (
 	"testing"
 
-	"github.com/iridiumgo/iridium-icons/icon"
-	"github.com/iridiumgo/iridium-icons/icon/icons"
+	"github.com/iridiumgo/iridium/view/icon"
+	"github.com/iridiumgo/iridium/view/icon/icons"
 )
 
 func BeforeEach() {
@@ -19,7 +19,7 @@ func TestIconsSettingChanged(t *testing.T) {
 	if i.Height != "16" && i.Width != "16" {
 		t.Errorf(`i.Height != "16"  && i.Width != "16"`)
 	}
-	i.SetSize("xl")
+	i.Size("xl")
 	if i.Height != "32" && i.Width != "32" {
 		t.Errorf(`i.Height != "32"  && i.Width != "32"`)
 	}
@@ -28,7 +28,7 @@ func TestIconsSettingChanged(t *testing.T) {
 func TestIconsCopy(t *testing.T) {
 	BeforeEach()
 
-	i1 := icons.Angry.Copy().SetSize("xl")
+	i1 := icons.Angry.Copy().Size("xl")
 	i2 := icons.Angry
 
 	if i1.Height != "32" && i1.Width != "32" {
@@ -42,7 +42,7 @@ func TestIconsCopy(t *testing.T) {
 func TestIconCopyAfterGlobalChange(t *testing.T) {
 	BeforeEach()
 
-	i1 := icons.Angry.SetSize("xl")
+	i1 := icons.Angry.Size("xl")
 	i2 := icons.Angry
 
 	if i1.Height != "32" && i1.Width != "32" {
